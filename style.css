@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clear-fix {
+    clear: both;
+}
+.home {
+   background-image: url(images/hero\ img.jpg);
+   background-size: cover;
+   background-position: center center;
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+.home .navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home .navbar .container {
+    width: 80%;
+    margin: auto;
+}
+.home .navbar .logo {
+    float: left;
+}
+.home .navbar .menu-link {
+    float: right;
+
+}
+.home .navbar .menu-link li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 20px;
+    font-family: "Source Sans 3", sans-serif;
+}
+.home .navbar .menu-link li .active {
+    color: #FF305B;
+}
+.home .navbar .menu-link li a {
+    color: white;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+.home .navbar a {
+    text-decoration: none;
+}
+.home .navbar .logo a {
+    color: #FF305B;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+}
+.home-content {
+    text-align: center;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);    
+}
+.home-content span {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
+}
+.home-content h1 {
+    color: #FF305B;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Source Sans 3", sans-serif;    
+}
+.about {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.about .about-content p{
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+}
+.about .about-content .line {
+    width: 5px;
+    height: 40px;
+    background-color: #FF305B;
+    padding-top: 5px;
+
+}
+.about span {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin: 15px;
+}
+.about .container {
+    padding: 10px 0;
+    margin: auto;
+}
+.about .about-img {
+    width: 27%;
+    float: left;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    padding-top: 11%;
+    padding-left: 10%;
+   
+}
+.about .about-img .border .img {
+    position: relative;
+    top: 25px;
+    left: 20px;
+    overflow: hidden;
+}
+.about .about-img .border .img img {
+    border-radius: 10px;
+}
+.about .about-img .border .img .layer {
+    background-color: #33333384;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    transition: .4s all;
+    justify-content: center;
+    align-items: center;
+   
+}
+.about .about-img .border .img:hover .layer {
+    top: 0;
+}
+.about .about-img .border::after {
+    content: '';
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    width: 340px;
+    height: 430px;
+    border: 10px solid #555555;
+    z-index: -1;
+    border-radius: 6px;
+}
+
+.about .about-content {
+    width: 50%;
+    float: right;
+    font-size: 18px;
+    padding-top: 10%;
+    position: relative;
+}
+.about .about-content h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 10px;
+    font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
+}
+.about .about-content h2::after {
+    content: '';
+    background-color: #FF305B;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 25%;
+    width: 4px;
+}
+.about .about-content p {
+    margin: 20px 0;
+}
+.dashed-line {
+    margin: 20px 0;
+    border: 1px dashed rgba(0, 0, 0, 0.5); 
+    width: 100%; 
+    height: 0; 
+  }
+  .about-content .about-list .col1 {
+    float: left;
+  }
+  .about-content .about-list .col2 {
+    margin-right: 100px;
+    float: right;
+  }
+  .about-content .btn {
+    background-color: #FF305B;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    border-width: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 5px;
+  }
+  .Services {
+    padding: 20px 0;
+    margin: 50px 0;
+    background-color: #F1F1F1;
+}
+.Services .container {
+    padding: 50px 0;
+    margin: auto;
+
+}
+.Services .our {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.Services .our h2 {
+    color: #333333;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 0;
+}
+.Services .container .our .line {
+    width: 150px;
+    height: 1px;
+    background-color: #FF305B;
+    text-align: center;
+    margin: auto;
+    
+}
+.Services .container .our .line::after {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 117px;
+    left: 700px;
+    background-color: #FF305B;
+
+}
+.Services .container .our .line::before {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 107px;
+    left: 700px;
+    background-color: #FF305B;
+}
+.Services .container .menu-item {
+    width: 80%;
+    margin: auto;
+}
+.Services .container .menu-item .item {
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+.Services .container .menu-item .item:hover {
+    background-color: #FFFFFF;
+}
+.Services .container .menu-item .item h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #333333;
+}
+.Services .container .menu-item .item p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #555555;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+.Portfolio {
+    padding: 10px 10px;
+    margin: auto;
+}
+.Portfolio .port {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.Portfolio .port h2 {
+    color: #333333;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 0;
+}
+.Portfolio .port .line2 {
+    width: 150px;
+    height: 1px;
+    background-color: #FF305B;
+    text-align: center;
+    margin: auto;
+}
+.Portfolio .port .line2::after {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 116px;
+    left: 685px;
+    background-color: #FF305B;
+}
+.Portfolio .port .line2::before {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 108px;
+    left: 685px;
+    background-color: #FF305B;
+}
+.Portfolio .port .list {
+    padding: 10px 0;
+    margin: auto;
+}
+.Portfolio .port .list ul {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0; 
+}
+.Portfolio .port .list li {
+    width: 8%;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+.Portfolio .port .list .dif {
+    color: #FF3065;
+}
+.Portfolio .port .items {
+    padding: 5px 10px;
+    margin: auto;
+    width: 95%;
+}
+.Portfolio .port .items .item {
+    width: 30%;
+    float: left;
+    padding: 5px 0;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.Portfolio .port .items .item .laye {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.Portfolio .port .items .item:hover .laye {
+    top: 0;
+}
+.Portfolio .port .items .item img {
+    width: 100%;
+}
+.team {
+    padding: 30px 30px;
+    margin: auto;
+    background-color: #F1F1F1;
+}
+.team .menu-items .item {
+    float: left;
+    width: 25%;
+    padding: 50px 0;
+    text-align: center;
+    margin: auto;
+}
+.team .menu-items .item p {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #333333;
+
+   
+}
+.team .menu-items .item span {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    color: #555555;
+}
+.Feedback {
+    padding: 30px 30px;
+    margin: auto;
+}
+.Feedback .Client {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.Feedback .Client h2 {
+    color: #333333;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 15px 0;
+}
+.Feedback .Client .line3 {
+    width: 150px;
+    height: 1px;
+    background-color: #FF305B;
+    text-align: center;
+    margin: auto;
+}
+.Feedback .Client .line3::after {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 140px;
+    left: 665px;
+    background-color: #FF305B;
+}
+.Feedback .Client .line3::before {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 134px;
+    left: 665px;
+    background-color: #FF305B;
+}
+.Feedback .alex {
+    background-color: #F1F1F1;
+    width: 70%;
+    margin: auto;
+    height: 200px;
+}
+.Feedback .alex .img-feed {
+    background-color: aqua;
+    float: left;
+}
+.Feedback .alex .img-feed img {
+    width: 100%;
+}
+.Feedback .alex .content-feed {
+    width: 30%;
+    background-color: tomato;
+    float: left;
+}
+.blog {
+    padding: 20px 0;
+    margin: 50px 0;
+    background-color: #F1F1F1;
+}
+.blog .container {
+    padding: 50px 0;
+    margin: auto;
+}
+.blog .our {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.blog .our h2 {
+    color: #333333;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 15px 0;
+}
+.blog .our .line4 {
+    width: 150px;
+    height: 1px;
+    background-color: #FF305B;
+    text-align: center;
+    margin: auto;
+}
+.blog .our .line4::after {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 140px;
+    left: 665px;
+    background-color: #FF305B;
+}
+.blog .our .line4::before {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 134px;
+    left: 665px;
+    background-color: #FF305B;
+}
+.Contact-Us {
+    padding: 20px 0;
+    margin: 50px 0;
+    background-color: #F1F1F1;
+}
+.Contact-Us .container {
+    padding: 50px 0;
+    margin: auto;
+}
+.Contact-Us .Us {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.Contact-Us .Us h2 {
+    color: #333333;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 15px 0;
+}
+.Contact-Us .Us .line5 {
+    width: 150px;
+    height: 1px;
+    background-color: #FF305B;
+    text-align: center;
+    margin: auto;
+}
+.Contact-Us .Us .line5::after {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 140px;
+    left: 695px;
+    background-color: #FF305B;
+}
+.Contact-Us .Us .line5::before {
+    content: '';
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 134px;
+    left: 695px;
+    background-color: #FF305B;
+}
+.Contact-Us .Us .te {
+    padding: 20px 20px;
+    margin: auto;
+}
+.Contact-Us .Us .te .words {
+    width: 60%;
+    margin: auto;
+    
+}
+.Contact-Us .Us .te .words input {
+    /* padding: 10px 0; */
+    width: 400px;
+    height: 40px;
+}
+.Contact-Us .Us .te .words .in1 {
+    float: left;
+}
+.Contact-Us .Us .te .words .in2 {
+    float: right;
+}
+.Contact-Us .Us .te .words .in3 {
+    width: 100%;
+}
+.Contact-Us .Us .te .words .btn {
+    width: 20%;
+    background-color: #FF305B;
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+.footer {
+    width: 100%;
+    background-color: #333333;
+    text-align: center;
+    margin: auto;
+}
+.footer p {
+    color: white;
+    padding: 70px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.footer .foot span {
+    color: #FF305B;
+}
